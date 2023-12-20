@@ -1,0 +1,32 @@
+input {
+  width: 150px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+}
+
+.list-item {
+  display: flex;
+  list-style-type: none;
+  grid-gap: 100px
+}
+
+.list-date {
+  padding: 0;
+}
+
+.paragraph {
+  display: flex;
+  grid-gap: 40px
+}
+
+/* .delite-btn {
+  height: 20px;
+  width: 20px;
+} */
