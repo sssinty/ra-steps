@@ -3,12 +3,13 @@ import { MouseEventHandler } from "react";
 interface IlistProps {
   date: string,
   distance: string,
-  onClick: MouseEventHandler<HTMLButtonElement>
+  onClick: MouseEventHandler<HTMLButtonElement>,
+  id: number,
 }
 
-const ListItem = ({date, distance, onClick} : IlistProps) => {
+const ListItem = ({date, distance, onClick, id} : IlistProps) => {
   return (
-    <li className="list-item">
+    <li key={id} className="list-item">
       <p className="date">{date}</p>
       <p className="distance">{distance}</p>
       <button onClick={onClick} className="delite-btn">x</button>

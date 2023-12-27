@@ -1,19 +1,19 @@
-import { ChangeEventHandler } from "react"
+import { ChangeEventHandler } from "react";
 
 interface IPropsInput {
-  value: any,
-  type?: 'text',
+  value: string | number,
+  type?: string,
   onChange: ChangeEventHandler<HTMLInputElement>,
   name: string,
   label: string,
   id: string
 }
 
-const Input = ({type='text', value, onChange, name, label, id} : IPropsInput) => {
+const Input = ({type, value, onChange, name, label, id} : IPropsInput) => {
   return (
     <>
       <label htmlFor={name}>{label}</label>
-      <input id={id} name={name} type='text' onChange={onChange} value={value} className="input-bordered"/>
+      <input id={id} name={name} type={type} onChange={onChange} value={value} className="input-bordered"/>
     </>
   )
 }
