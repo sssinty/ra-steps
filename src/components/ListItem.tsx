@@ -12,7 +12,7 @@ const ListItem = ({date, distance, onClick, id} : IlistProps) => {
     <li key={id} className="list-item">
       <p className="date">{date}</p>
       <p className="distance">{distance}</p>
-      <button onClick={onClick} className="delite-btn">x</button>
+      <button onClick={() => onClick(date)} className="delite-btn">x</button>
     </li>
   )
 }

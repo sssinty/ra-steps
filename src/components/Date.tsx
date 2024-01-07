@@ -3,7 +3,7 @@ import ListItem from "./ListItem";
 
 interface IDate {
   state: Array<{'': number}>,
-  btnRemove: MouseEventHandler<HTMLButtonElement>
+  btnRemove: MouseEventHandler<HTMLButtonElement>,
 }
 
 const Date = ({state , btnRemove} : IDate) => {

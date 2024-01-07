@@ -23,7 +23,7 @@ function App() {
   }
 
   const btnRemove = (event : MouseEventHandler<HTMLButtonElement>) => {
-    console.log(event)
+    setState(state.filter(value => !value[event]));
   }
    
 
